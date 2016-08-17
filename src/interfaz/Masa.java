@@ -99,6 +99,11 @@ public class Masa extends javax.swing.JFrame {
         jPanel1.add(lblPorc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 100, 40));
 
         cmdCalcular.setText("Calcular");
+        cmdCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdCalcularActionPerformed(evt);
+            }
+        });
         jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
 
         cmdRestaurar.setText("Restaurar");
@@ -108,6 +113,34 @@ public class Masa extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
+
+        String Res1,Res2,Res3;
+        double n1, n2, n3, p1, p2, p3, total;
+        
+        n1 = Double.parseDouble(txtInv1.getText());
+        n2 = Double.parseDouble(txtInv2.getText());
+        n3 = Double.parseDouble(txtInv3.getText());
+        
+        total = n1 + n2 + n3;
+        
+        p1 = (n1*100)/total;
+        p2 = (n2*100)/total;
+        p3 = (n3*100)/total;
+        
+        Res1 = String.valueOf(p1);
+        Res2 = String.valueOf(p2);
+        Res3 = String.valueOf(p3);
+        
+        lblPorc1.setText(Res1);
+        lblPorc2.setText(Res2);
+        lblPorc3.setText(Res3);
+        
+        
+        
+        
+    }//GEN-LAST:event_cmdCalcularActionPerformed
 
     /**
      * @param args the command line arguments
