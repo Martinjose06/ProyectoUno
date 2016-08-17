@@ -107,6 +107,11 @@ public class Masa extends javax.swing.JFrame {
         jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
 
         cmdRestaurar.setText("Restaurar");
+        cmdRestaurar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdRestaurarActionPerformed(evt);
+            }
+        });
         jPanel1.add(cmdRestaurar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 420));
@@ -141,6 +146,19 @@ public class Masa extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_cmdCalcularActionPerformed
+
+    private void cmdRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdRestaurarActionPerformed
+
+        txtInv1.setText("");
+        txtInv2.setText("");
+        txtInv3.setText("");
+        lblPorc1.setText("");
+        lblPorc2.setText("");
+        lblPorc3.setText("");
+        txtInv1.requestFocusInWindow();
+
+
+    }//GEN-LAST:event_cmdRestaurarActionPerformed
 
     /**
      * @param args the command line arguments
