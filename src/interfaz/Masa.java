@@ -27,18 +27,84 @@ public class Masa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel8 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtInv1 = new javax.swing.JTextField();
+        txtInv2 = new javax.swing.JTextField();
+        txtInv3 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lblPorc1 = new javax.swing.JLabel();
+        lblPorc2 = new javax.swing.JLabel();
+        lblPorc3 = new javax.swing.JLabel();
+        cmdCalcular = new javax.swing.JButton();
+        cmdRestaurar = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        jLabel8.setText("jLabel8");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inversión");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Inversión");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 110, -1));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel2.setText("Inversion 1");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel3.setText("Inversion 2");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel4.setText("Inversion 3");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
+        jPanel1.add(txtInv1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 70, -1));
+        jPanel1.add(txtInv2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 80, -1));
+        jPanel1.add(txtInv3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 80, -1));
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel5.setText("Porcentaje 1");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel6.setText("Porcentaje 2");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jLabel7.setText("Porcentaje 3");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, -1, -1));
+
+        lblPorc1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorc1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(lblPorc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 100, 40));
+
+        lblPorc2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorc2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(lblPorc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 100, 40));
+
+        lblPorc3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPorc3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(lblPorc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, 100, 40));
+
+        cmdCalcular.setText("Calcular");
+        jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
+
+        cmdRestaurar.setText("Restaurar");
+        jPanel1.add(cmdRestaurar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +145,22 @@ public class Masa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdCalcular;
+    private javax.swing.JButton cmdRestaurar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblPorc1;
+    private javax.swing.JLabel lblPorc2;
+    private javax.swing.JLabel lblPorc3;
+    private javax.swing.JTextField txtInv1;
+    private javax.swing.JTextField txtInv2;
+    private javax.swing.JTextField txtInv3;
     // End of variables declaration//GEN-END:variables
 }
